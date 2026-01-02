@@ -3,7 +3,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
 // Імпорт нових middleware
-const { securityHeaders } = require('./middleware/securityMiddleware');
+const { securityHeaders } = require('./middleware/validationMiddleware');
 const { sanitizeInput, preventNoSQLInjection } = require('./middleware/validationMiddleware');
 const { xssFilterOutput, validateContentType } = require('./middleware/xssFilter');
 
